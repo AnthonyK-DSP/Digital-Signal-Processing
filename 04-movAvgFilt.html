@@ -1,0 +1,54 @@
+<html lang="eng">
+<!-- This is a comment -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="nameTest" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+	
+<h1><strong>Moving Average Filter</strong></h1>	
+
+<p>
+		The Moving Average Filter is shown in the Figure below. The output is 
+		<em>y(n) = x(n) + x(n-1)+ x(n-2)</em>.
+		This equation states that the output is obtained by adding 2 delayed versions of the input
+		to itself. Modify the previous difference filter code to obtain the averaging filter. 
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/MovingAvg.png" alt="Moving Average Filter Image" width="450px">
+
+</div>
+
+<p>
+		Looking at the filter output you can see that the low frequency content is amplified
+		relative to the high frequency content.
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/MovAvgTime.png" alt="Moving Average Filter Output Signal Image" width="450px">
+
+</div>
+
+<p>
+		Increasing the number of delays to 9, gives a 10 term filter. This increases the averaging effect.
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/04-MovingAv10.png" alt="10 Term Moving Average Filter Output Signal Image" width="450px">
+
+</div>
+
+<a	href="03-diffFilt.html">	
+	Previous: Difference Filter   <br />
+</a>
+<br />
+
+<a	href="05-FIR1st.html">	
+	Next: 1st Order FIR Filter
+</a>

@@ -1,0 +1,90 @@
+<html lang="eng">
+<!-- This is a comment -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="nameTest" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	
+<h1><strong>Introduction to Digital Signal Processing with Python</strong></h1>
+<h2><strong>Sampled Sinusoidal Signal</strong></h2>
+<p>The purpose of this page is to give some basic guidelines
+for exploring Digital Signal Processing (DSP) with Python. 
+The Python code below produces a sampled sinusoidal signal of amplitude <em>A</em>=10 V, 
+and of frequency <em>fa</em>=1000 cycles per second (Hz). The sampling frequency <em>fs</em>=100,000. 
+This represents the number of samples/sec. The number of display samples <em>N</em>=200. 
+The time axes <em>''t''</em> is used in the plotting function. 
+It is scaled by a factor of 1000 so that the time axis is plotted in milliseconds (msecs).
+</p> 
+
+<div style="text-align: center;">
+
+    <img src="Figures/TonePlotCode.png" alt="Tone Plot Code" width="450" vspace="20">
+
+</div>
+
+<!-- This is a comment<br> </br -->
+
+<div style="text-align: center;">
+
+    <img src="Figures/Tone1kHz.png" alt="1 kHz Tone Image" width="450" vspace="20">
+
+</div>
+
+<a	href="Code/05-FIR.py">	
+	FIR Frequency Response Code
+</a>
+
+<p>
+		You can decide which version of Python that you wish to use yourself. 
+		The Scientific Python Development Environment(
+<a	href="https://www.spyder-ide.org/">	
+	Spyder Python IDE
+</a>		
+	    ) is excellent.  You also need to import some libraries 
+		to provide extra functionality. The 1st one is numpy which is numerical Python. This contains many different 
+		functions to facilitate numerical analysis. The 2nd one is matplotlib.pyplot which allows plotting of various 
+		signals. From the above plot, you can see that the period of the signal is 1 ms and the amplitude is 10 V. 
+		The default display settings can be adjusted using a style file. 
+		You need to create a file called dspbook.mplstyle (
+<a	href="Code/02-dspbook.mplstyle">	
+	MPL Style Code
+</a>
+	)	
+</p>
+
+<p>
+		Save this file in the same location where you  save your Python files. 
+		The material used in this page is based on the book in the following link:
+<a	href="https://www.amazon.ie/Introduction-Digital-Signal-Processing-Python/dp/B0BG7ZFWW9/ref=sr_1_1?sr=8-1">	
+	Introduction to Digital Signal Processing Using Python
+</a>
+</p>
+
+<h2><strong>Stem Plot</strong></h2>	
+
+<p>
+		Change the sampling frequency to 8000 Hz, the number of samples to 20 and 
+		replace the plot instruction with the stem instruction plt.stem(t,tone).
+</p>	
+
+<div style="text-align: center;">
+
+    <img src="Figures/StemPlot.png" alt="Stem Plot Image" width="450" vspace="20">
+
+</div>
+
+<p>
+		The samples are easier to see in this zoomed in stem diagram. It can be seen that the number
+		of samples per period in this case is 8.
+</p>	
+
+<a	href="02-spectrum.html">	
+	Plotting the spectrum of a signal 
+</a>
+<p>
+		<br />
+</p>

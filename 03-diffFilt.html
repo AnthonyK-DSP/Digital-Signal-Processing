@@ -1,0 +1,51 @@
+<html lang="eng">
+<!-- This is a comment -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="nameTest" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	
+<h1><strong>Difference Filter</strong></h1>	
+
+<p>
+		The Difference Filter is shown in the Figure below. The output is <em>y(n) = x(n) - x(n-1)</em>.
+		This equation states that the output is obtained by subtracting a delayed version of the input
+		from itself. The block with the capital <em>T</em> represents a delay of 1 sample period. The triangle with
+		the -1 represents a multiplication by -1. The code section below, shows how this can be done.
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/diffFilt.png" alt="Difference Filter Image" width="450px"  vspace="20">
+
+</div>
+
+<div style="text-align: center;">
+
+    <img src="Figures/03-diffFilt.png" alt="Difference Filter Code" width="450px"  vspace="20">
+
+</div>
+
+<div style="text-align: center;">
+
+    <img src="Figures/diffFiltOP.png" alt="Difference Filter Image" width="450px"  vspace="20">
+
+</div>
+
+<p>
+		Looking at the difference filter output you can see that the high frequency content is amplified
+		relative to the low frequency content.
+</p>
+
+<a	href="02-spectrum.html">	
+	Previous: Plotting the Spectrum of a Signal   <br />
+</a>
+<br />
+
+<a	href="04-movAvgFilt.html">	
+	Next: Moving Average Filter
+</a>

@@ -1,0 +1,66 @@
+<html lang="eng">
+<!-- This is a comment -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="nameTest" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+	
+<h1><strong>First Order Finite Impulse Response Filter</strong></h1>	
+
+<p>
+		The First Order Finite Impulse Response Filter (<em>FIR</em>) is shown in the Figure below. The output is 
+		<em>y(n) = x(n) + bx(n-1).</em>
+		The filter is 1st order because there is a single delay. If there was an <em>x(n-2)</em> term, it would be a 2nd order
+        filter. The number of terms in the output of this filter will be finite as the output does not continue
+        indefinitely. A unit impulse is defined as [1,0,0,0,......]. This represents a 1 level at <em>n</em>=0, followed by a
+		0 level for <em>n</em>=[1,2,3.......]. If this is connected to the input of the filter, the output is [1,b,0,0,0,0...].
+		There are only 2 finite terms in the output.
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/05-FIR1st.png" alt="First Order FIR Filter Image" width="450px">
+
+</div>
+
+<p>
+	The code below plots the frequency response of the filter. The D.C. gain is normalised to 0 dB and the -3 dB 
+	frequency occurs at approximately 4100 Hz. The frequency response of this filter is 
+	1+2bcos(&#x03B8;)+b<sup>2</sup>, where &#x03B8;=2&pi;<em>f/f<sub>s</sub></em>.
+	This is also called the magnitude squared frequency response. 
+	It represents the squared amplitude of the output as a function of the frequency <em>f</em>. 
+	The sampling frequency is <em>f<sub>s</sub></em>. The D.C. gain of The
+	filter corresponds to <em>&#x03B8;</em>=0. This is <em>1+2bcos(0)+b<sup>2</sup>=(1+b)<sup>2</sup></em>. If we divide the 
+	filter frequency response by this value, we can normalise the D.C. gain to 1. This is equivalent to 0 dB. 
+	The actual cut-off frequency can is <em>&#x03B8;<sub>c</sub>=cos<sup>-1</sup>(2b-1-b<sup>2</sup>)/(4b)</em> where 
+	the cut-off frequency in Hz is <em>f<sub>c</sub>=&#x03B8;<sub>c</sub>f<sub>s</sub>/(2&pi;).</em>Substituting into the
+	equations gives <em>&#x03B8;<sub>c</sub>=1.6375 and f<sub>c</sub>=4170 Hz.</em>
+</p>	
+	
+<div style="text-align: center;">
+
+    <img src="Figures/05-FIR1stCode.png" alt="1st Order FIR Filter Code" width="450" vspace="20">
+
+</div>
+
+
+
+<a	href="Code/05-FIR.py">	
+	FIR Frequency Response Code
+</a>
+
+<div style="text-align: center;">
+    <img src="Figures/05-FIR1stFreq.png" alt="1st Order Filter Frequency Response" width="450px">
+</div>
+
+<a	href="04-movAvgFilt.html">	
+	Previous: Moving Average Filter   <br />
+</a>
+<br />
+
+<a	href="065-IIR1st.html">	
+	Next: 1st Order IIR Filter
+</a>

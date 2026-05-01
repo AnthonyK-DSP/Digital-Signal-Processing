@@ -1,0 +1,47 @@
+#dspbook.mplstyle
+text.color : (0,0.27,0.72)
+#patch.facecolor: E4EEF5
+
+# AXES
+#axes.facecolor: E4EEF5
+axes.titlesize : 14
+axes.labelsize : 12
+axes.edgecolor : (0.1,0.1,0.1) #Normalized RGB colours (from 0 to 1 instead of 0 to 255)
+axes.labelcolor : (0,0.27,0.72)
+axes.linewidth : 1
+axes.spines.top : True
+axes.spines.right : True
+axes.spines.bottom : True
+axes.spines.left : True
+axes.grid.which : both
+
+# GRID
+axes.grid : True
+#grid.color          : 062940    # grid color
+grid.alpha : 0.7
+grid.linestyle : --
+grid.linewidth : 0.6
+
+# LINES
+axes.prop_cycle: cycler('color', ['E24A33', '348ABD', '988ED5', '777777', 'FBC15E', '8EBA42', 'FFB5B8'])
+lines.linewidth : 1.5
+lines.markeredgewidth : 0.0
+
+# SCATTER PLOT
+scatter.marker : .
+
+# TICKS
+xtick.labelsize : 13
+xtick.color : (0.2,0.2,0.2)
+xtick.direction : in
+xtick.minor.visible : True
+ytick.labelsize : 13
+ytick.color : (0.2,0.2,0.2)
+ytick.direction : in
+ytick.minor.visible : True
+
+# FIGURE OUTPUT 
+figure.facecolor: E4EEF5
+figure.figsize  : 5, 1.5
+figure.dpi : 300
+savefig.dpi : 300

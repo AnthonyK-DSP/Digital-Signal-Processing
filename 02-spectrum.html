@@ -1,0 +1,88 @@
+<html lang="eng">
+<!-- This is a comment -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="nameTest" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	
+
+<h1><strong>Spectrum of a Signal</strong></h1>	
+<p>
+		We can plot the frequencies in a signal by looking at its spectrum. Use scipy.fftpack to
+		avail of the FFT (Fast Fourier Transform) function. This obtains the spectrum of a signal. It translates
+		the signal into the spectral or frequency domain.
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/02-SpectTone.png" alt="Spectrum Plot Code" width="450" vspace="20">
+
+</div>
+
+<a	href="Code/02-SpectTone.py">	
+	Code for Displaying a Tone Spectrum
+</a>
+	
+<div style="text-align: center;">
+
+    <img src="Figures/SpectTone.png" alt="Tone Spectrum Image" width="450px">
+
+</div>
+
+<p>
+		The spectrum shows a frequency component at 1 kHz of amplitude 10 V. It also shows a mirror image of the
+		frequency at fs-1kHz=7 kHz. This is produced by the FFT function. Modify the code to create a signal
+		that produces the following spectrum (the lower frequency is 400 Hz):
+</p
+
+</code></pre>
+	
+<div style="text-align: center;">
+
+    <img src="Figures/DualTone.png" alt="Dual Tone Spectrum Image" width="450px">
+
+</div>
+
+<p>
+		The FFT can only resolve frequencies below half the sampling frequency. It makes sense then to 
+		restrict the plot to half the range on the frequency axis by adding the following code snippit:
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/02-SpectSnip.png" alt="Spectrum Snippet Code" width="250" vspace="20">
+
+</div>
+
+<div style="text-align: center;">
+
+    <img src="Figures/DualTonefsOn2.png" alt="Dual Tone Spectrum up to fs/2 Image" width="450px">
+
+</div>
+
+<p>
+		Modify the previous code to create a signal called 'dualTone' with frequencies of 500 Hz
+        and 5000 Hz with amplitudes 10 V and 6 V respectively. Use a sampling frequency of 50 kHz and display for
+        250 samples. Plot the signal in the time domain. Save the dualTone signal using 
+		np.save("d:\python\ipx.npy",dualTone). This creates a file in the d:\python directory with the name ipx.npy
+		consisting of the data in dualTone.	
+</p>
+
+<div style="text-align: center;">
+
+    <img src="Figures/DualToneTime.png" alt="Dual Tone Time Plot Image" width="450px">
+
+</div>
+<br />
+
+<a	href="index.html">	
+	Previous: Introduction   <br />
+</a>
+<br />
+<a	href="03-diffFilt.html">	
+	Next: Difference Filter  <br />
+</a>
